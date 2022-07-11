@@ -43,8 +43,15 @@ dependencies {
 
     // 图片解析库
     implementation 'eskit.sdk.support:image-loader:2.0.0.1-SNAPSHOT'
-
     // 视频播放器
     implementation 'eskit.sdk.support:player-manager:2.0.1-SNAPSHOT'
     implementation 'eskit.sdk.support:player-ijk:2.0.6-SNAPSHOT'
+    // 音频播放器
+    implementation 'eskit.sdk.support:player-audio-ijk:2.0.7-SNAPSHOT'
+    implementation 'eskit.sdk.support:player-audio-android:2.0.3-SNAPSHOT'
+    // 图表控件
+    implementation 'eskit.sdk.support:chart:2.0.3-SNAPSHOT'
+    // 浏览器组件
+    implementation 'eskit.sdk.support:webview:2.0.0-SNAPSHOT'
+    implementation 'eskit.sdk.support:x5webview:2.0.0-SNAPSHOT'
 }
