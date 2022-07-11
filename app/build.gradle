@@ -12,6 +12,8 @@ android {
         versionCode 1
         versionName "1.0"
 
+        multiDexEnabled true
+
         ndk {
             abiFilters "armeabi-v7a" // "armeabi", "x86", "x86_64"
         }
@@ -35,9 +37,9 @@ dependencies {
     implementation 'androidx.multidex:multidex:2.0.1'
 
     // DEBUG版本的SDK，可以使用chrome看log，性能一般，能看log
-    debugImplementation 'eskit.sdk:core-debug:2.2.4.2-SNAPSHOT'
+    debugImplementation 'eskit.sdk:core-debug:2.2.5.2-SNAPSHOT'
     // RELEASE版本的SDK，建议正式发版使用，运行速度显著提高，不能看log
-    releaseImplementation 'eskit.sdk:core:2.2.4.2-SNAPSHOT'
+    releaseImplementation 'eskit.sdk:core:2.2.5.2-SNAPSHOT'
 
     // 图片解析库
     implementation 'eskit.sdk.support:image-loader:2.0.0.1-SNAPSHOT'

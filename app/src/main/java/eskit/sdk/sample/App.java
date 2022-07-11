@@ -22,6 +22,7 @@ public class App extends MultiDexApplication {
         EsManager.get().init(this, InitConfig.getDefault()
                 .appId("后台申请KEY")
                 .channel("集成渠道")
+                .customServer("http://172.27.2.13:8888")
                 .debug(BuildConfig.DEBUG));
 
         // 注册图片组件
