@@ -1,7 +1,21 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
-plugins {
-    id 'com.android.application' version '7.2.1' apply false
-    id 'com.android.library' version '7.2.1' apply false
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "com.android.tools.build:gradle:7.1.1"
+    }
+}
+
+allprojects {
+    repositories {
+        maven {
+            url 'http://nexus.extscreen.com/repository/maven-public/'
+            allowInsecureProtocol true
+        }
+    }
 }
 
 task clean(type: Delete) {
