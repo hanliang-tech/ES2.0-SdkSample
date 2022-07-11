@@ -12,7 +12,9 @@ android {
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "armeabi-v7a" // "armeabi", "x86", "x86_64"
+        }
     }
 
     buildTypes {
@@ -30,4 +32,17 @@ android {
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.3.0'
     implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    // DEBUG版本的SDK，可以使用chrome看log，性能一般，能看log
+    debugImplementation 'eskit.sdk:core-debug:2.2.4.2-SNAPSHOT'
+    // RELEASE版本的SDK，建议正式发版使用，运行速度显著提高，不能看log
+    releaseImplementation 'eskit.sdk:core:2.2.4.2-SNAPSHOT'
+
+    // 图片解析库
+    implementation 'eskit.sdk.support:image-loader:2.0.0.1-SNAPSHOT'
+
+    // 视频播放器
+    implementation 'eskit.sdk.support:player-manager:2.0.1-SNAPSHOT'
+    implementation 'eskit.sdk.support:player-ijk:2.0.6-SNAPSHOT'
 }
