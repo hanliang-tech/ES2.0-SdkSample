@@ -36,22 +36,34 @@ dependencies {
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.multidex:multidex:2.0.1'
 
-    // DEBUG版本的SDK，可以使用chrome看log，性能一般，能看log
-    debugImplementation 'eskit.sdk:core-debug:2.2.5.2-SNAPSHOT'
-    // RELEASE版本的SDK，建议正式发版使用，运行速度显著提高，不能看log
-    releaseImplementation 'eskit.sdk:core:2.2.5.2-SNAPSHOT'
-
-    // 图片解析库
-    implementation 'eskit.sdk.support:image-loader:2.0.0.1-SNAPSHOT'
-    // 视频播放器
-    implementation 'eskit.sdk.support:player-manager:2.0.1-SNAPSHOT'
-    implementation 'eskit.sdk.support:player-ijk:2.0.6-SNAPSHOT'
-    // 音频播放器
+    // 主sdk
+    implementation 'eskit.sdk:core:2.7.8.7-SNAPSHOT'
+    // 图片加载组件
+    implementation 'eskit.sdk.support:image-loader:2.0.1-SNAPSHOT'
+    // 运行时
+    implementation 'eskit.sdk.support:runtime:2.0.1-SNAPSHOT'
+    implementation 'eskit.sdk.support:waterfall-kit:1.0.30'
+    implementation 'eskit.sdk.support:ui:2.0.14-SNAPSHOT'
+    // 播放器相关
+    implementation 'eskit.sdk.support:player-manager:2.0.2-SNAPSHOT'
+    implementation 'eskit.sdk.support:player-ijk:2.0.11-SNAPSHOT'
     implementation 'eskit.sdk.support:player-audio-ijk:2.0.7-SNAPSHOT'
-    implementation 'eskit.sdk.support:player-audio-android:2.0.3-SNAPSHOT'
-    // 图表控件
-    implementation 'eskit.sdk.support:chart:2.0.3-SNAPSHOT'
-    // 浏览器组件
-    implementation 'eskit.sdk.support:webview:2.0.0-SNAPSHOT'
-    implementation 'eskit.sdk.support:x5webview:2.0.0-SNAPSHOT'
+    implementation 'eskit.sdk.support:player-audio-android:2.0.4-SNAPSHOT'
+    // 广告
+    implementation 'eskit.sdk.support:player-ad:2.1.0-SNAPSHOT'
+    // 其它非必要
+    implementation 'eskit.sdk.support:audio-record:2.0.0-SNAPSHOT'
+    implementation 'eskit.sdk.support:download:2.0.0-SNAPSHOT'
+    implementation 'eskit.sdk.support:upload:2.0.0-SNAPSHOT'
+    implementation 'eskit.sdk.support:iconview:2.0.0-SNAPSHOT'
+    implementation 'eskit.sdk.support:chart:2.1.7-SNAPSHOT'
+    implementation 'eskit.sdk.support:voice-wave:2.0.0-SNAPSHOT'
+    implementation 'eskit.sdk.support:swiper:2.0.0-SNAPSHOT'
+    implementation 'eskit.sdk.support:rippleview:2.0.0-SNAPSHOT'
+    implementation 'eskit.sdk.support:gif:2.0.0-SNAPSHOT'
+    implementation 'eskit.sdk.support:webview:2.0.1-SNAPSHOT'
+    implementation 'eskit.sdk.support:x5webview:2.0.1-SNAPSHOT'
+    implementation 'eskit.sdk.support:playmarkview:2.0.1-SNAPSHOT'
+    implementation 'eskit.sdk.support:canvas:1.0.6-SNAPSHOT'
+    implementation 'eskit.sdk.support:image:2.0.5-SNAPSHOT'
 }

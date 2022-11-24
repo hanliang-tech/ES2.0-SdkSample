@@ -17,6 +17,7 @@ allprojects {
             url 'http://nexus.extscreen.com/repository/maven-public/'
             allowInsecureProtocol true
         }
+        mavenLocal()
     }
 }
 
