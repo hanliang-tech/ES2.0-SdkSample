@@ -12,6 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:name=".App"
+        tools:replace="android:allowBackup"
         android:theme="@style/Theme.SdkSample">
         <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>

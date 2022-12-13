@@ -25,15 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private void startEsApp() {
         EsData data = new EsData();
         data.setAppPackage("es.hello.world");
-        // 自定义下载链接
-//        data.setLoadType(LoadType.CUSTOM_SERVER);
-//        data.setAppDownloadUrl(getDownloadUrl());
-
         EsManager.get().start(data);
-    }
-
-    private String getDownloadUrl() {
-        return "https://www.eskit.tv/download/eskit-sdk-sample.es";
     }
 
     @Override
