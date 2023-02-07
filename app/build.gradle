@@ -39,4 +39,5 @@ dependencies {
 
     // SDK
     implementation 'com.extscreen.runtime:eskit:1.0.5'
+
 }
