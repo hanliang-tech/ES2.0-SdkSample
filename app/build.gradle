@@ -38,6 +38,6 @@ dependencies {
     implementation 'androidx.multidex:multidex:2.0.1'
 
     // SDK
-    implementation 'com.extscreen.runtime:eskit:1.0.5'
+    implementation 'com.extscreen.runtime:official:1.0.1'
 
 }
