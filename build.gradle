@@ -13,10 +13,7 @@ allprojects {
     repositories {
         maven { url 'https://maven.aliyun.com/repository/google' }
         maven { url 'https://maven.aliyun.com/repository/public' }
-        maven {
-            url 'http://nexus.extscreen.com/repository/maven-public/'
-            allowInsecureProtocol true
-        }
+        maven { url 'https://nexus.extscreen.com/repository/maven-public/' }
         mavenLocal()
     }
 }
