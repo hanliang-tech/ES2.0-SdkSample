@@ -3,20 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#40b883"
     tools:context=".ESViewActivity">
 
     <FrameLayout
         android:id="@+id/es_browser_root_view"
-        android:layout_width="480dp"
-        android:layout_height="270dp"
-        android:layout_gravity="center"
-        android:background="@color/gray_dark" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/es_browser_nav_host"
-        android:layout_width="480dp"
-        android:layout_height="270dp"
-        android:layout_gravity="center"
-        android:background="@color/gray_dark" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
 </FrameLayout>
