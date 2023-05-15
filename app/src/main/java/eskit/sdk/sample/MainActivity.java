@@ -50,7 +50,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void startEsApp() {
         EsData data = new EsData();
-        data.setAppPackage("es.hello.world");
+//        data.setAppPackage("es.hello.world");
+        data.setAppPackage("es.com.huohuotu.tv");
         EsManager.get().start(data);
     }
 

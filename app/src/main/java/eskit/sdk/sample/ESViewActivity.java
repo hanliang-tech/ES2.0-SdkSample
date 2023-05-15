@@ -18,7 +18,7 @@ import eskit.sdk.support.args.EsMap;
 
 public class ESViewActivity extends AppCompatActivity {
 
-    private final String ES_APP_PACKAGE = "es.hello.world";
+    private final String ES_APP_PACKAGE = "es.com.huohuotu.tv";
 
     private IEsActivityProxy mActivityProxy;
 
