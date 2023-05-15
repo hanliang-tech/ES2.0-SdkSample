@@ -38,6 +38,7 @@ dependencies {
     implementation 'androidx.multidex:multidex:2.0.1'
 
     // SDK
-    implementation 'com.extscreen.runtime:official:1.0.22'
+    implementation 'com.extscreen.runtime:official:1.0.31'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
 
 }
