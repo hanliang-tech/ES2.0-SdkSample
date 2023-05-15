@@ -29,7 +29,7 @@ public class ESViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_es_view);
 
-        rootView = this.findViewById(R.id.es_root_view);
+        rootView = this.findViewById(R.id.es_browser_root_view);
 
         initES();
     }
