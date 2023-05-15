@@ -18,7 +18,7 @@ import eskit.sdk.support.args.EsMap;
 
 public class ESViewActivity extends AppCompatActivity {
 
-    private final String ES_APP_PACKAGE = "es.extscreen.runtime";
+    private final String ES_APP_PACKAGE = "es.hello.world";
 
     private IEsActivityProxy mActivityProxy;
 
