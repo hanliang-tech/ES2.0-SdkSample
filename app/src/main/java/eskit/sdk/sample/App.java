@@ -18,6 +18,9 @@ public class App extends MultiDexApplication {
 
         // 初始化SDK
         EsKitInitHelper.init(this, InitConfig.getDefault()
+                .setAppId("")
+                .setChannel("")
+                .setDebug(BuildConfig.DEBUG)
                 .setDebug(BuildConfig.DEBUG)
                 .addFlags(InitConfig.FLAG_DYNAMIC_SO));
     }

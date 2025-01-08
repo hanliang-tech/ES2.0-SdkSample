@@ -15,23 +15,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SdkSample"
         tools:replace="android:allowBackup">
-        <activity
-            android:name=".ESViewActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".MainActivity"
+
+        <activity-alias
+            android:name=".LaunchEntry"
+            android:targetActivity=".JsViewActivity"
+            android:enabled="true"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.extscreen.runtime.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
                 <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+
             </intent-filter>
-        </activity>
+
+        </activity-alias>
+
+        <activity android:name=".MainActivity" android:exported="false"/>
+        <activity android:name=".JsViewActivity" android:exported="false"/>
+
     </application>
 
 </manifest>

@@ -29,16 +29,26 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    packagingOptions {
+        //下面是存放so库的路径，以及so库的文件名和后缀都得写全
+        pickFirst 'lib/armeabi-v7a/libc++_shared.so'
+        pickFirst 'lib/arm64-v8a/libc++_shared.so'
+    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.aar'])
+    implementation 'androidx.multidex:multidex:2.0.1'
     implementation 'androidx.appcompat:appcompat:1.3.0'
     implementation 'com.google.android.material:material:1.4.0'
-    implementation 'androidx.multidex:multidex:2.0.1'
-
-    // SDK
-    implementation 'com.extscreen.runtime:official:1.0.31'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
 
+    // SDK
+    implementation 'com.extscreen.runtime:official:2.9.5-beta01'
+
+//    implementation "com.extscreen:hippy4tv-support:1.9.102-debug1"
+//    implementation ('com.extscreen.runtime:official:2.9.5-beta01') {
+//        exclude group: 'com.extscreen', module: 'hippy4tv-support'
+//    }
 }
