@@ -1,8 +1,6 @@
 package eskit.sdk.sample;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,37 +15,15 @@ import eskit.sdk.core.EsManager;
  */
 public class MainActivity extends AppCompatActivity {
 
-    private Button activityModeButton;
-    private Button viewModeButton;
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        //
-        activityModeButton = this.findViewById(R.id.activity_mode_button);
-        activityModeButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startEsApp();
-            }
-        });
-
-        //
-        viewModeButton = this.findViewById(R.id.view_mode_button);
-        viewModeButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-            }
-        });
-
+        startEsApp();
     }
 
     private void startEsApp() {
         EsData data = new EsData();
-//        data.setAppPackage("es.hello.world");
-        data.setAppPackage("es.com.huohuotu.tv");
+        data.setAppPackage("es.hello.world");
         EsManager.get().start(data);
     }
 

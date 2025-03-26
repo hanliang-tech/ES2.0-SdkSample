@@ -18,7 +18,7 @@
 
         <activity-alias
             android:name=".LaunchEntry"
-            android:targetActivity=".JsViewActivity"
+            android:targetActivity=".MainActivity"
             android:enabled="true"
             android:exported="true">
 
