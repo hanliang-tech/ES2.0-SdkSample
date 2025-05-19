@@ -3,33 +3,23 @@ package eskit.sdk.sample;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 
 import eskit.sdk.core.EsData;
-import eskit.sdk.core.EsManager;
+import eskit.sdk.core.ui.BrowserStandardActivity;
 
 /**
  * 说明
  * <p>
  * Create by weipeng on 2022/07/11 12:57
  */
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BrowserStandardActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        startEsApp();
-    }
-
-    private void startEsApp() {
         EsData data = new EsData();
         data.setAppPackage("es.hello.world");
-        EsManager.get().start(data);
+        getIntent().putExtra("data", data);
+        super.onCreate(savedInstanceState);
     }
 
-    @Override
-    protected void onStop() {
-        super.onStop();
-        finish();
-    }
 }
