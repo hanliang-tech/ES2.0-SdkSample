@@ -17,7 +17,10 @@ public class MainActivity extends BrowserStandardActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         EsData data = new EsData();
+
+        // 设置要启动的应用包名
         data.setAppPackage("es.hello.world");
+
         getIntent().putExtra("data", data);
         super.onCreate(savedInstanceState);
     }
